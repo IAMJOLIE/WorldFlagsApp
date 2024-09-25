@@ -1,0 +1,46 @@
+.box{
+    width: 250px;
+    height: 300px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    box-shadow: 1px 2px 10px  rgba(35, 35, 35, 0.492) ;
+}
+       
+       
+
+
+
+
+.image{
+   height: 150px;
+   width: 250px;
+   
+       
+}
+
+.name{
+    border-radius: 10px;
+    margin-right: 20px;
+    
+}
+
+.details{
+    margin-left: 15px;
+    
+}
+.it1, .it2, .it3{
+    border-radius: 10px;
+    margin-bottom: 2px;
+    
+} 
+
+
+.details p {
+    font-size: 16px;
+    color: #ccc;
+    font-weight: bold;
+     
+}
+
