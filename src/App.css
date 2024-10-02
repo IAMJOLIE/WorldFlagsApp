@@ -1,163 +1,168 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: var(--primary);
 }
 
-
-.navbar{
+.navbar {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   position: fixed;
   top: 0px;
   padding: 20px;
   position: relative;
   box-shadow: 0px 5px 8px 0px #ccc;
   height: 80px;
-  
 }
 
-.dark-mode{
+.dark-mode {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   width: 150px;
   height: 50px;
   cursor: pointer;
   border: none;
-
 }
-
-.dark-mode:hover{
+.dark input:focus + label {
+  top: -1px;
+  background-color: #202c36;
+  font-size: 12px;
+  color: white;
+  padding: 0px 5px;
+}
+.dark-mode:hover {
   background-color: var(--secondary);
- 
 }
 
-.dark .dark-mode:hover{
+.dark .dark-mode:hover {
   background-color: #374552;
- 
 }
 
 .dark .dark-mode p {
   color: white;
-  
 }
 
 .navbar h1 {
   font-weight: 500;
 }
-.navbar p{
+.navbar p {
   font-weight: 500;
 }
-.dark .navbar{
+.dark .navbar {
   background-color: #2b3844;
   box-shadow: none;
 }
 
-.dark .card{
- background-color: #2b3844;
-}
-
-
-.dark .card-list h1{
-  color: white;
-}
-
-.dark p{
-  color: #ccc;
-}
-
-body.dark{
-  background-color: #202C36;
-}
-
-
-
-.dark input{
-  background-color: #202C36;
-  border-color: white;
-  color: white;
-}
-
-.dark input:hover{
- 
-  border-color: white;
-}
-
-.dark input:focus{
-  
-  border-color: white;
-}
-
-.dark .dropdown{
-  background-color: #202C36;
-  border-color: white;
-}
-
-.dark .dropdown:hover{
-  border-color: white;
-}
-
-.dark .dropdown:focus{
-  border-color: white;
-}
-.dark .open{
+.dark .card {
   background-color: #2b3844;
 }
 
-.dark .dropdown-list-item:hover{
- background-color: #374552;
-}
-
-.dark .card:hover{
-  background-color: #374552;
-}
-
-.dark h1{
+.dark .card-list h1 {
   color: white;
 }
-.dark .nav-link{
-  color: #ccc;
-}
-.dark .nav-link:hover{
-  background-color: #374552;
-}
 
-.dark .nav-link-back:hover{
-  background-color: #374552;
-}
-
-.dark .nav-link-back{
-
-}
-
-input::placeholder {
-  color: #aaa;
-}
-
-.dark .icon{
+.dark p {
   color: #ccc;
 }
 
-.light .icon{
+body.dark {
+  background-color: #202c36;
+}
+
+.dark input {
+  background-color: #202c36;
+  border-color: white;
+  color: white;
+}
+
+.dark input:hover {
+  border-color: white;
+}
+
+.dark input:focus {
+  border-color: white;
+  outline: 2px solid white;
+}
+
+.dark .dropdown {
+  background-color: #202c36;
+  border-color: white;
+  color: white;
+}
+
+.dark .dropdown:hover {
+  border-color: white;
+}
+
+.dark .dropdown:focus {
+  border-color: white;
+}
+.dark .menu {
+  background-color: #2b3844;
+}
+
+.dark .dropdown.open .label,
+.dark .dropdown.selected .label {
+  background-color: #202c36;
+  color: white;
+}
+
+.dark .dropdown-list-item:hover {
+  background-color: #374552;
+}
+
+.dark .dropdown::after {
+  content: "▼";
+  transition: transform 0.3s ease;
+  color: white;
+  padding-left: 0px;
+}
+
+.dark .dropdown.open::after {
+  color: white;
+  content: "▲";
+}
+
+.dark .card:hover {
+  background-color: #374552;
+}
+
+.dark h1 {
+  color: white;
+}
+.dark .nav-link {
+  color: #ccc;
+}
+.dark .nav-link:hover {
+  background-color: #374552;
+}
+
+.dark .nav-link-back:hover {
+  background-color: #374552;
+}
+
+.dark .icon {
+  color: #ccc;
+}
+
+.light .icon {
   color: black;
 }
 
-
-.arrow{
+.arrow {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   gap: 20px;
   height: 60px;
-
 }
