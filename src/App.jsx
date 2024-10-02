@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import HomePage, { countriesLoader } from "./components/HomePage";
 import { useEffect, useState } from "react";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import ErrorPage from "./components/ErrorPage";
 
 const router = createBrowserRouter([
