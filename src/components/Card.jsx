@@ -18,7 +18,7 @@ const Card = ({ theme }) => {
           <p className="back">Back</p>
         </NavLink>
 
-        <img src={country.flags.png} alt="flags" className="flag-card" />
+        <img src={country.flags.svg} alt="flags" className="flag-card" />
       </div>
       <h1> {country.name.common} </h1>
 

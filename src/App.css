@@ -10,16 +10,23 @@ body {
 
 .navbar {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   position: fixed;
   top: 0px;
-  padding: 20px;
   position: relative;
   box-shadow: 0px 5px 8px 0px #ccc;
   height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.item-placering{
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  position: absolute;
+  padding: 20px;
 }
 
 .dark-mode {

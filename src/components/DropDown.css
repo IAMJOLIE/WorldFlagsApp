@@ -67,6 +67,17 @@
   background-color: white;
   padding: 14px 10px 0px 10px;
   overflow: scroll;
+  overflow-x: hidden;
+}
+
+.menu::-webkit-scrollbar {
+  width: 8px;
+}
+
+.menu::-webkit-scrollbar-thumb {
+  background-color: #888;
+
+  
 }
 
 .dropdown-list-item {

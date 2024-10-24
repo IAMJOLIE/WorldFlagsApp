@@ -12,13 +12,17 @@ const Navbar = ({ theme, setTheme}) => {
 
     return ( 
     <nav className='navbar'>  
+    <div className='item-placering'>
+
+    
     <h1>The Flag App</h1>
     <img className='logo' src={theme == 'light' ? logo_dark : logo_light} alt="techover-logo" />
     <div className='dark-mode' onClick={()=>{toggle_mode()}}>    
     <img className='moon' src={theme == 'light' ? moon_dark: moon_light} 
     alt="dark mode toggle"  /> 
     <p>{theme == 'light' ? 'LIGHT MODE': 'DARK MODE'}  </p>
-    </div>   
+    </div>  
+    </div> 
     </nav>
      );
 }
