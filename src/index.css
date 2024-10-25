@@ -140,14 +140,14 @@
     
   }
   .flag-card {
-    max-width: 400px;
+    max-width: 380px;
     object-fit: contain; 
     margin-bottom: 10px;
     
   }
 
   .main-box h1 {
-    top: 430px;
+    top: 450px;
     left: 0px;
     white-space: normal;
     overflow-wrap: break-word;
@@ -186,7 +186,6 @@
 
 @media (max-width: 650px) {
   .main-box {
-    
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -198,7 +197,7 @@
     
   }
   .flag-card {
-    max-width: 280px;
+    width: 270px;
   
   }
   .child1{
@@ -209,12 +208,13 @@
     
   }
 
+
   .main-box h1 {
     white-space: normal;
     overflow-wrap: break-word;
     word-wrap: break-word;
     left: 0px;
-    top: 330px;
+    top: 340px;
     
   
     
