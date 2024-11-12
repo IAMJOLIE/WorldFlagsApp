@@ -125,125 +125,132 @@
 
 @media (max-width: 950px) {
   .main-box {
+    height: 80vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 0px;
-    gap: 0px;
+    align-items: center;
+   
+   
     
     max-width: 600px;
   }
   .child1{
-    height: 400px;
+   height: 600px;
+    width: 500px;
     
     
   }
   .flag-card {
-    max-width: 380px;
-    object-fit: contain; 
-    margin-bottom: 10px;
+   width: 100%;
+   height: 100%;
+   
     
   }
 
   .main-box h1 {
-    top: 450px;
-    left: 0px;
+   
     white-space: normal;
     overflow-wrap: break-word;
     word-wrap: break-word;
     width: 300px;
-    position: absolute;
+    
   }
   .child2 {
-    margin-left: 0px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 8px;
-    width: 600px;
-    margin-bottom: 20px;
-    margin-top: 130px;
     
+    display: flex;
+   align-items: flex-start;
+   gap: 30px;
+    
+    width: 500px;
+   
+    
+    
+  }
+
+  .info-child2{
+   
+    
+    
+    gap: 40px;
+  
   }
   .item1,
   .item2 {
     gap: 8px;
   }
-  .border-container {
-    position: static;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 100%;
-  }
+ 
 
-  .nav-link-back {
-    margin-bottom: 10px;
-  }
+ 
 }
 
 @media (max-width: 650px) {
   .main-box {
+   height: 90vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 0px;
-    gap: 20px;
-    padding-left: 0px;
-    max-width: 350px;
+    align-items: center;
+    
+   padding: 10px 0px;
+   
+ 
     
   }
-  .flag-card {
-    width: 270px;
+
+  .child1{
+    height: 400px;
+   width: 350px;
+     
+     
+   }
+   .flag-card {
+    width: 100%;
+    height: 100%;
+    
+     
+   }
+   .info-child2{
+   
+    
+    
+    gap: 20px;
   
   }
-  .child1{
-    height: 330px;
-    margin-bottom: 20px;
-    
 
-    
-  }
 
 
   .main-box h1 {
     white-space: normal;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    left: 0px;
-    top: 340px;
+   
     
   
     
   }
 
   .child2 {
-    margin-left: 0px;
+    
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    margin-bottom: 0px;
-    margin-top: 40px;
+   align-items: flex-start;
+   
+    
+   width: 350px;
+    
+    
+    
   }
 
-  .border-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 100%;
-    position: static;
+  .border-links {
     
+    max-width: 200px;
+   
   }
 
   
 
-  .nav-link-back {
-    margin-bottom: 10px;
-  }
+  
+
+ 
 }

@@ -8,6 +8,9 @@ import HomePage, { countriesLoader } from "./components/HomePage";
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import ErrorPage from "./components/ErrorPage";
+import SkeletonThemeProvider from "./components/SkeletonThemecontext";
+
+
 
 const router = createBrowserRouter([
   {
@@ -24,7 +27,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const [loading, setLoading] = useState(true);
+ 
   const [theme, setTheme] = useState("light");
 
   useEffect(() => {
@@ -32,11 +35,14 @@ function App() {
   }, [theme]);
 
   return (
+
+    <SkeletonThemeProvider theme={theme}>
     <div className={`container ${theme}`}>
       <Navbar theme={theme} setTheme={setTheme} />
 
       <RouterProvider router={router} />
     </div>
+    </SkeletonThemeProvider>
   );
 }
 

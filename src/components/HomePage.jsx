@@ -33,7 +33,7 @@ const HomePage = ({ theme, setTheme }) => {
         setFilteredCountries(countries);
         setLoading(false); 
         sessionStorage.setItem('hasVisited', 'true'); 
-      }, 1000);
+      }, 800);
     } else {
       setFilteredCountries(countries);
       setLoading(false);
@@ -71,7 +71,7 @@ const HomePage = ({ theme, setTheme }) => {
             .fill(0)
             .map((_, i) => (
               <div key={i}>
-                <CardSkeleton height={180} />
+                <CardSkeleton />
               </div>
             ))}
         </div>

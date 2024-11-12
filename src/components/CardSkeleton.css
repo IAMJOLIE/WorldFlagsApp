@@ -1,22 +1,13 @@
 .box {
   width: 250px;
-  height: 250px;
+  height: 260px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 2px 10px rgba(35, 35, 35, 0.492);
+  box-shadow: 0px 5px 6px rgba(35, 35, 35, 0.492);
   overflow: hidden;
 }
-.img {
-  width: 100%;
-  background-color: #e0e0e0;
-  height: 140px;
-}
-.image {
-  width: 100%;
-  object-fit: cover;
-  height: 125px;
-}
+
 .name {
   border-radius: 10px;
 }

@@ -1,14 +1,17 @@
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "./CardSkeleton.css";
+import { useSkeletonTheme } from "./SkeletonThemecontext";
 
 const CardSkeleton = () => {
+
+const skeletonTheme = useSkeletonTheme();
   return (
-    <SkeletonTheme baseColor="#e0e0e0" highlightColor="#f5f5f5">
+    <SkeletonTheme baseColor={skeletonTheme.color} highlightColor={skeletonTheme.highlightColor}  >
       <div className="box">
         
         <div className="box-land"> 
-          <div className="img">
-          <Skeleton className="image"  width="100%" height={140} style={{margin: 0, padding: 0}}/></div>
+          <div className="img" >
+          <Skeleton className="image" width={'100%'} height={140}  /></div>
           <div className="details">
             <h1>
               <Skeleton className="name" width={200} height={20} />
